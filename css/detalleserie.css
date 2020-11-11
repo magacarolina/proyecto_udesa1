@@ -1,0 +1,225 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.encabezado {
+  width: 100%;
+  color: black; 
+} 
+
+body {
+  margin:0 ;
+  background-color: black;
+  color: blanchedalmond;
+  font-family:'Work Sans', sans-serif;
+ 
+}
+
+.container {
+  min-height: 770px;
+  background-image: url("../img/series/euphoria-detalle.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+.background {
+ background-color: rgba(0,0,0,0.5);
+  
+}
+
+.texto h1 {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+  text-decoration:underline gray;
+}
+.container article {
+  padding: 10%;
+}
+
+.fichatecnica{
+display: grid;
+grid-template-columns: 1fr 2fr ;
+padding: 0;
+column-gap: 5px;
+
+}
+.opciones ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(128, 194, 166);
+  display: flex;
+  justify-content: center;
+}
+
+.opciones li a {
+display: block;
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 100%;
+font-weight: 500;
+padding: 8px 16px;
+background-color: rgb(128, 194, 166);
+}
+.opciones li a.active {
+      background-color: white;
+      color: white;
+  }   
+
+.opciones li a:hover:not(.active) {
+  background-color: rgb(128, 194, 166);
+  color: white;
+}
+.navbar {
+  display: none;
+  width: 100%;
+  background-color:black;
+  overflow: auto;
+  font-family:'Work Sans', sans-serif;
+}
+
+.navbar .logo a{
+  float: left;
+  padding: 15px;
+  color:  white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar .options a {
+  float: right;
+  padding: 15px;
+  color:  white;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.navbar a:hover {
+  background-color: gray;
+  color: rgb(128, 194, 166);
+}
+
+.active {
+  background-color: rgb(128, 194, 166);
+  color: #EDE2D2; 
+}
+ 
+.topnav {
+  overflow: hidden;
+  background: black;
+  width: 100%;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  
+}
+
+.topnav a:hover {
+  background-color: rgb(128, 194, 166);
+  color: black;
+}
+
+.active {
+  background-color: gray;
+  color: #EDE2D2;
+}
+
+
+.footer{
+  background-color:black;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+  border-top: 1px solid #e1e1e1;
+
+}
+
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+}
+.footer a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+.footer p{
+  text-align: center ;
+}
+@media(min-width:420px){
+
+.footer ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+@media(min-width:768px){
+
+  .topnav { 
+      display: none;
+  }
+
+  .navbar {
+      display: block;
+  }
+  
+    .generos ul {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+  }
+  .footer ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+
+@media(min-width:1080px){
+  
+  .bannermobile {display: none;}
+
+  .topnav { 
+      display: none;
+  }
+ 
+  .navbar {
+      display: block;
+  }
+  
+    .generos ul {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);   
+  }
+  .footer ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+}
+

@@ -1,0 +1,279 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.encabezado {
+    width: 100%;
+    color: black; 
+}
+
+body {
+    margin:0 ;
+    background-color: #EDE2D2;
+    font-family:'Work Sans', sans-serif;
+}
+
+.bannermobile img {
+    height: 100% ;
+    width: 100%;
+}
+.bannermobile {
+    height: 100px;
+}
+
+.banner { display: none;
+}
+  .opciones ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(128, 194, 166);
+    display: flex;
+    justify-content: center;
+}
+
+.opciones li a {
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 500;
+    padding: 8px 16px;
+    background-color: rgb(128, 194, 166);
+}
+.opciones li a.active {
+        color: white;
+    }   
+
+.opciones li a:hover:not(.active) {
+    background-color: rgb(128, 194, 166);
+    color: white;
+  }
+
+.generos li a:hover:not(.active) {
+    color: white;
+  }
+
+.navbar {
+    display: none;
+    width: 100%;
+    background-color:black;
+    overflow: auto;
+    font-family:'Work Sans', sans-serif;
+  }
+  
+  .navbar .logo a{
+    float: left;
+    padding: 15px;
+    color:  white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar .options a {
+    float: right;
+    padding: 15px;
+    color:  white;
+    text-decoration: none;
+    font-size: 17px;
+    margin-right: 10px;
+  }
+  .navbar a:hover {
+    background-color: gray;
+    color: rgb(128, 194, 166);
+  }
+  
+  .active {
+    background-color: rgb(128, 194, 166);
+    color: #EDE2D2; 
+  }
+   
+.topnav {
+    overflow: hidden;
+    background: black;
+    width: 100%;
+    position: relative;
+
+  }
+  
+.topnav #myLinks {
+    display: none;
+  }
+  
+.topnav a {
+    color: white;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    
+  }
+  
+.topnav a:hover {
+    background-color: rgb(128, 194, 166);
+    color: black;
+  }
+  
+.active {
+    background-color: gray;
+    color: #EDE2D2;
+  }
+
+.generos{
+        min-height: 360px;
+        width: 100%;
+
+}
+
+  .generos ul{
+    list-style-type: none;
+    margin: 5px;
+    padding:0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 100px;
+    border: solid rgb(128, 194, 166);
+    padding-bottom: 20px;
+    background-color: black
+  }
+
+  .generos a {
+    text-decoration:none;
+    color: rgb(60, 77, 77);
+  }
+  .generos h2 {
+    font-weight: bold ;
+    text-align: center;
+    padding: 2%; 
+    text-decoration:underline dotted;
+}
+.generos li{
+   text-align: center;
+   text-decoration:none;
+  
+}
+.generos h1{
+  font-weight: normal;
+}
+
+
+.generos img{
+    height: 200px;
+    width: 300px;
+    border: solid black;
+    opacity: 0.6;
+   
+}
+
+.generos img:hover {
+  opacity: 1.0;
+}
+
+
+
+.footer{
+  background-color:black;
+  bottom: 0;
+  width: 100%;
+  padding: 30px 0;
+
+}
+
+.footer ul {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0;
+  padding: 0;
+}
+.footer a{
+  text-decoration: none;
+  color: gray;
+}
+
+
+.footer p{
+  text-align: center ;
+  color: blanchedalmond;
+}
+
+@media(min-width:420px){
+  
+  .footer ul{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+
+@media(min-width:768px){
+    
+    .bannermobile {display: none;}
+
+    .banner {display: block;
+        height: 160px;}
+
+    .banner img {
+        height: 100% ;
+        width: 100%;
+    }
+    
+    .topnav { 
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+    }
+    
+      .generos ul {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer ul{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media(min-width:1080px){
+    
+    .bannermobile {display: none;}
+
+    .topnav { 
+        display: none;
+    }
+
+    .banner {display: block;
+        height: 210px;}
+
+    .banner img {
+        height: 100% ;
+        width: 100%;
+    }
+
+    .navbar {
+        display: block;
+    }
+    
+      .generos ul {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);   
+    }
+    .footer ul{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
