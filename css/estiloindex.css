@@ -30,7 +30,8 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(128, 194, 166);
+    background: rgb(162,233,203);
+background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 100%);
     display: flex;
     justify-content: center;
 }
@@ -43,7 +44,7 @@ body {
     font-size: 100%;
     font-weight: 500;
     padding: 8px 16px;
-    background-color: rgb(128, 194, 166);
+
 }
 .opciones li a.active {
         background-color: white;
@@ -70,6 +71,7 @@ body {
     text-decoration: none;
     font-size: 17px;
   }
+
 
 .navbar .options a {
     float: right;
@@ -190,7 +192,7 @@ body {
     width: 100%;
     padding: 30px 0;
    
- 
+
 }
 
 .footer ul {
@@ -208,9 +210,19 @@ body {
 
 
 .footer p{
-    text-align: center ;
+ text-align: center;
+}
+
+#logofb {
+   max-width: 40px;
 
 }
+#logoinsta {
+    max-width: 47px;
+ 
+ }
+
+
 
 @media(min-width:420px){
     .top-peliculas, .top-kids, .top-series{
