@@ -18,9 +18,27 @@ fetch (url)
             let poster = document.querySelector('.background');
             let descripcion = document.querySelector('.description');
 
+            //let genero = document.querySelector('.genero')
+
+            let estreno = document.querySelector('.estreno')
+            let estado = document.querySelector ('.estado')
+
+            //let production = document.querySelector('.produccion')
+
+            let puntuacion = document.querySelector('.puntuacion')
+
+
             titulo.innerText = data.title;
-            poster.src = `https://image.tmdb.org/t/p/w500${data.poster_path}`
             descripcion.innerText = data.overview ;
+            //genero.innerText = data.genres.name ;
+
+            estreno.innerText = data.release_date ;
+            estado.innerText = data.status ; 
+            puntuacion.innerText = data.vote_average ;
+
+            //production.innerText = data.production_companies.name ;
+
+            document.body.style.backgroundImage= "url('https://image.tmdb.org/t/p/w500${info[i].backdrop_path}')";
             
     })
     .catch (function (error){
