@@ -20,7 +20,6 @@ fetch (url)
         let descripcion = document.querySelector('.description');
 
         let genero = document.querySelector('.genero');
-        
         for (let i=0; i<data.genres.length; i++){ 
             genero.innerText += ` ${data.genres[i].name}`;
         }
@@ -28,10 +27,10 @@ fetch (url)
         let estreno = document.querySelector('.estreno')
         let estado = document.querySelector ('.estado')
 
-        //let production = document.querySelector('.produccion')
-        //for (production=0; production<length; production++){
-            //production.innerText = data.production_companies.name ;}
-
+        //let produccion = document.querySelector('.produccion')
+        //for (let i=0; i<production_companies.length; i++){
+            //produccion.innerText = ` ${data.production_companies[i].name}` ;}
+            
         let puntuacion = document.querySelector('.puntuacion')
 
         titulo.innerText = data.title;
