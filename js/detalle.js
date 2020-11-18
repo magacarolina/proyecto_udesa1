@@ -19,25 +19,23 @@ fetch (url)
             let descripcion = document.querySelector('.description');
 
             //let genero = document.querySelector('.genero')
-
+            //for (genero=0; genero<length; genero++){ 
+                //genero.innerText = data.genres;}
+            
             let estreno = document.querySelector('.estreno')
             let estado = document.querySelector ('.estado')
 
             //let production = document.querySelector('.produccion')
+            //for (production=0; production<length; production++){
+                //production.innerText = data.production_companies.name ;}
 
             let puntuacion = document.querySelector('.puntuacion')
 
-
             titulo.innerText = data.title;
             descripcion.innerText = data.overview ;
-            //genero.innerText = data.genres.name ;
-
             estreno.innerText = data.release_date ;
             estado.innerText = data.status ; 
             puntuacion.innerText = data.vote_average ;
-
-            //production.innerText = data.production_companies.name ;
-
             document.body.style.backgroundImage= "url('https://image.tmdb.org/t/p/w500${info[i].backdrop_path}')";
             
     })
