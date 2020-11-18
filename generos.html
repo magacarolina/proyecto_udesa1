@@ -12,61 +12,67 @@
 <body>
 
   <header>
-    
-  <section class="encabezado">
+    <section class="encabezado">
 
-    <nav class="navbar">
-        
-        <div class="logo">
-            <a href="index.html">
-              <img src="img/logo.png" alt="logo" width="45px"> 
-            </a>
-        </div>
-        <div class="options">
-          <a href="generos.html">Géneros</a>
-          <a href="">Visto recientemente</a>
-          <a href="">Mas vistos</a>
-          <a href="">Sugerencias</a>
+      <nav class="navbar">
+      
+          <div class="logo">
+              <a href="index.html">
+               <img src="img/logo.png" alt="logo" width="45px"> 
+              </a>
           </div>
-      </nav>
 
-    <nav class="topnav">
+          <div class="options">
+            <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
+            <a href="generos.html">Géneros</a>
+            <a href="">Sugerencias</a>
+          </div>
+        </nav>
+        
+        <nav class="topnav">
 
-            <div class="logo"> <a href="index.html">
-              <img src="img/logo.png" alt="logo" width="45px">  </a>
-            </div>
+          <div class="logo"> <a href="index.html">
+              <img src="img/logo.png" alt="logo" width="45px"> 
+           </a>
+          </div>
 
-            <div id="myLinks">
-              
-              <a href="generos.html">Géneros</a>
-              <a href="">Visto recientemente</a>
-              <a href="">Mas vistos</a>
-              <a href="">Sugerencias</a>
-        </div>
+          <div id="myLinks">
+            <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
+            <a href="generos.html">Géneros</a>
+            <a href="">Sugerencias</a>
+      </div>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-      
-  </section>
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+        
+    </section>
 
 
-    <div class="banner">  <img src="img/banner-generos4.jpg" alt="banner" > 
-  </div>
-  <div class="bannermobile">  <img src="img/bannermobile_generos.jpg" alt="banner" > 
-  </div>
+      <div class="banner">  <img src="img/banner2.jpg" alt="banner" > 
+    </div>
+    <div class="bannermobile">  <img src="img/bannermobile1.jpg" alt="banner" > 
+    </div>
 
-    
-  <section class="opciones">
+    <section class="opciones">
 
-    <ul>
-        <li><a href=""><i class="fas fa-search"></i> Buscar</a></li>
-        <li><a href=""><i class="fas fa-heart"></i> Añadidos</a></li>
+     
+      <ul>
+          <li> <div class="col-7 col-md-6">
+        <form action="/search" method="GET" class="search-form">
+            <input type="text" name="keywords" placeholder="Buscar peliculas, series y mas" class="search-form_input">
+            <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+        </form>
+    </div></li>
       </ul>
-      </section>
 
- </header>
+    </section>
+
+   </header>
 
  
         <section class="generos">
