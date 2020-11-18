@@ -24,10 +24,9 @@
             </div>
 
             <div class="options">
-                <a href="generos.html">Géneros</a>
-                <a href="">Visto recientemente</a>
-                <a href="">Mas vistos</a>
-                <a href="">Sugerencias</a>
+              <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
+              <a href="generos.html">Géneros</a>
+              <a href="">Sugerencias</a>
             </div>
           </nav>
           
@@ -39,14 +38,15 @@
             </div>
 
             <div id="myLinks">
-              
-                <a href="generos.html">Géneros</a>
-                <a href="">Visto recientemente</a>
-                <a href="">Mas vistos</a>
-                <a href="">Sugerencias</a>
+              <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
+              <a href="generos.html">Géneros</a>
+              <a href="">Sugerencias</a>
         </div>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
       </nav>
@@ -61,9 +61,14 @@
 
       <section class="opciones">
 
+       
         <ul>
-            <li><a href=""><i class="fas fa-search"></i> Buscar</a></li>
-            <li><a href=""><i class="fas fa-heart"></i> Añadidos</a></li>
+            <li> <div class="col-7 col-md-6">
+          <form action="/search" method="GET" class="search-form">
+              <input type="text" name="keywords" placeholder="Buscar peliculas, series y mas" class="search-form_input">
+              <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+          </form>
+      </div></li>
         </ul>
 
       </section>
