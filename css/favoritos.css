@@ -34,8 +34,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background: rgb(162,233,203);
-background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 100%);
+    background-color: rgb(128, 194, 166);
     display: flex;
     justify-content: center;
 }
@@ -48,7 +47,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     font-size: 100%;
     font-weight: 500;
     padding: 8px 16px;
-
+    background-color: rgb(128, 194, 166);
 }
 .opciones li a.active {
         background-color: white;
@@ -77,7 +76,6 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     text-decoration: none;
     font-size: 17px;
   }
-
 
 .navbar .options a {
     float: right;
@@ -165,62 +163,9 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     cursor: pointer;
   }
   
-  /*====== Estructura ======*/
+/*====== Estructura ======*/
 
-.container{
-    margin: 5px;
-    
-}
-.pelicula, .series {
-    min-height: 360px;
-    width: 100%;
 
-}
-
-.pelicula a, .series a {
-    color: rgb(60, 77, 77);
-    text-decoration: none;
-    font-family:'Work Sans', sans-serif;
-    text-align: start;
-}
-
-.titulo {
-    font-weight: bold ;
-    text-align: center;
-    padding: 5%; 
-    text-decoration:underline rgb(128, 194, 166);
-}
-.container h3 {
-    padding: 18px;
-    text-align: center;
-    font-weight: normal ;
-}
-
-.zoom {
-    transition: transform .2s;
-    width: 300px;
-    margin: 0 auto;
-  }
-  
-.zoom:hover {
-    -ms-transform: scale(1.5); 
-    -webkit-transform: scale(1.5); 
-    transform: scale(1.1); 
-  }
-
-.top-peliculas, .top-kids, .top-series {
-    
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    font-size: 14px;
-    border:ridge rgb(128, 194, 166) ;
-    padding-top: 25px;
-    background-color:#EDE2D2;
-}
-
-.container img{
-    width: 100%;
-}
 
 /*====== Footer ======*/
 
@@ -230,7 +175,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     width: 100%;
     padding: 30px 0;
    
-
+ 
 }
 
 .footer ul {
@@ -248,31 +193,13 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 
 .footer p{
- text-align: center;
-}
-
-#logofb {
-   max-width: 40px;
+    text-align: center ;
 
 }
-#logoinsta {
-    max-width: 47px;
- 
- }
-
-
+/*====== Responsive ======*/
 
 @media(min-width:420px){
-    .top-peliculas, .top-kids, .top-series{
-        grid-template-columns: repeat(2,1fr);
-        
-    }
-
-     .pelicula img, .series img{
-        height: 310px;
-        width: 211px;
-        
-    }
+    
     .zoom {
         width: 200px;
     }
@@ -284,11 +211,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 
 @media(min-width:768px){
-    .top-peliculas, .top-kids, .top-series{
-        grid-template-columns: repeat(3,1fr);
-        padding-bottom: 10px;
-        padding-right: 40px;
-    }
+    
 
     .bannermobile {display: none;}
 
@@ -299,11 +222,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         height: 100% ;
         width: 100%;
     }
-    .pelicula img, .series img{
-        height: 320px;
-        width: 221px;
-        
-    }
+    
     
     .topnav { 
         display: none;
@@ -319,10 +238,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 }
 
 @media(min-width:1080px){
-    .top-peliculas, .top-kids, .top-series{
-        grid-template-columns: repeat(4,1fr);
-        padding-right: 50px;
-    }
+    
     .zoom{
         width: 250px;
     }
@@ -341,14 +257,6 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         width: 100%;
     }
     
-    .pelicula img, .series img{
-        height: 340px;
-        width: 230px;
-    }
-
-    .pelicula, .series {
-        padding-bottom: 15px;
-    }
     .navbar {
         display: block;
     }
@@ -357,7 +265,3 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
-
-
-
