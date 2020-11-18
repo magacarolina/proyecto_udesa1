@@ -14,30 +14,33 @@ fetch (url)
         return respuesta.json()
     })
     .then (function (data){
-            let titulo = document.querySelector('h1');
-            let poster = document.querySelector('.background');
-            let descripcion = document.querySelector('.description');
+        console.log(data);
+        let titulo = document.querySelector('h1');
+        let poster = document.querySelector('.container');
+        let descripcion = document.querySelector('.description');
 
-            //let genero = document.querySelector('.genero')
-            //for (genero=0; genero<length; genero++){ 
-                //genero.innerText = data.genres;}
-            
-            let estreno = document.querySelector('.estreno')
-            let estado = document.querySelector ('.estado')
+        let genero = document.querySelector('.genero');
+        
+        for (let i=0; i<data.genres.length; i++){ 
+            genero.innerText += ` ${data.genres[i].name}`;
+        }
+        
+        let estreno = document.querySelector('.estreno')
+        let estado = document.querySelector ('.estado')
 
-            //let production = document.querySelector('.produccion')
-            //for (production=0; production<length; production++){
-                //production.innerText = data.production_companies.name ;}
+        //let production = document.querySelector('.produccion')
+        //for (production=0; production<length; production++){
+            //production.innerText = data.production_companies.name ;}
 
-            let puntuacion = document.querySelector('.puntuacion')
+        let puntuacion = document.querySelector('.puntuacion')
 
-            titulo.innerText = data.title;
-            descripcion.innerText = data.overview ;
-            estreno.innerText = data.release_date ;
-            estado.innerText = data.status ; 
-            puntuacion.innerText = data.vote_average ;
-            document.body.style.backgroundImage= "url('https://image.tmdb.org/t/p/w500${info[i].backdrop_path}')";
-            
+        titulo.innerText = data.title;
+        descripcion.innerText = data.overview ;
+        estreno.innerText = data.release_date ;
+        estado.innerText = data.status ; 
+        puntuacion.innerText = data.vote_average ;
+        poster.style.backgroundImage = `url('https://image.tmdb.org/t/p/w500${data.backdrop_path}')`;
+        
     })
     .catch (function (error){
         console.log(error);
