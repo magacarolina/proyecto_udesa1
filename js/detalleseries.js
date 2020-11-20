@@ -25,14 +25,15 @@ fetch (url)
         let estreno = document.querySelector('.estreno')
         let estado = document.querySelector ('.estado')    
         let puntuacion = document.querySelector('.puntuacion')
-        
+        let temporadas = document.querySelector('.temporadas')
+
         titulo.innerText = data.name;
         descripcion.innerText = data.overview ;
         estreno.innerText = data.first_air_date ;
         estado.innerText = data.status ; 
         puntuacion.innerText = data.vote_average ;
         poster.style.backgroundImage = `url('https://image.tmdb.org/t/p/w500${data.backdrop_path}')`;
-        
+        temporadas.innerText = data.number_of_seasons ;
     })
     .catch (function (error){
         console.log(error);

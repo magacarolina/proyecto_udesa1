@@ -25,12 +25,7 @@ fetch (url)
         }
         
         let estreno = document.querySelector('.estreno')
-        let estado = document.querySelector ('.estado')
-
-        //let produccion = document.querySelector('.produccion')
-        //for (let i=0; i<production_companies.length; i++){
-            //produccion.innerText = ` ${data.production_companies[i].name}` ;}
-            
+        let estado = document.querySelector ('.estado')   
         let puntuacion = document.querySelector('.puntuacion')
 
         titulo.innerText = data.title;
@@ -45,5 +40,22 @@ fetch (url)
         console.log(error);
     })
    
+let (url1) = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US&page=1`
 
+fetch (url1)
+.then(function (respuesta){
+    return respuesta.json()
+})
+.then (function (data){
 
+    let review = document.querySelector('.reviews');
+        for (let i=0; i<1; i++){
+            review.innerText += `${data[i].content}`;
+        }
+        
+    console.log(review);
+    })
+
+    .catch (function (error){
+        console.log(error);
+    })
