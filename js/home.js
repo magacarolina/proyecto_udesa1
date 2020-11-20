@@ -41,7 +41,7 @@ fetch (url)
         let movies = document.querySelector('.top-peliculas');
 
 
-        for (let i=0; i<10; i++){
+        for (let i=0; i<12; i++){
             movies.innerHTML += 
                             `<article class="pelicula">
                             <a href="detallepelicula.html?id=${info[i].id}">
@@ -71,7 +71,7 @@ fetch (url2)
 let info = data.results 
 let tv = document.querySelector('.top-series');
                         
-for (let i=0; i<10; i++){
+for (let i=0; i<12; i++){
 tv.innerHTML += 
                                                     `<article class="series">
                                                     <a href="detallepelicula.html?id=${info[i].id}">
@@ -101,7 +101,7 @@ fetch (url3)
 let info = data.results 
 let person = document.querySelector('.top-rated');
                         
-for (let i=0; i<10; i++){
+for (let i=0; i<12; i++){
 person.innerHTML += 
                                                     `<article class="pelicula">
                                                     <a href="detallepelicula.html?id=${info[i].id}">
