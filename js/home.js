@@ -74,7 +74,7 @@ let tv = document.querySelector('.top-series');
 for (let i=0; i<12; i++){
 tv.innerHTML += 
                                                     `<article class="series">
-                                                    <a href="detallepelicula.html?id=${info[i].id}">
+                                                    <a href="detalleseries.html?id=${info[i].id}">
                                                         <div class="zoom">
                                                             <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="${info[i].title}" >
                                                              <h3>${info[i].name}</h3>
