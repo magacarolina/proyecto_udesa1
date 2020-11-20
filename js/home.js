@@ -63,7 +63,8 @@ tv.innerHTML +=
 console.log(error);
  })
 
-let url3 = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}language=en-US&with_genres=10751`;       
+let url3 = `https://api.themoviedb.org/3/movie/top_rated?api_key=7b1d579cd6ba8b41cc1f3f375e375cb5&language=en-US&page=1
+`;       
 fetch (url3)
 .then(function (respuesta){
  return respuesta.json()
@@ -71,15 +72,15 @@ fetch (url3)
 .then (function (data){
                         
 let info = data.results 
-let kids = document.querySelector('.top-kids');
+let person = document.querySelector('.top-rated');
                         
 for (let i=0; i<10; i++){
-kids.innerHTML += 
+person.innerHTML += 
                                                     `<article class="pelicula">
                                                     <a href="detallepelicula.html?id=${info[i].id}">
                                                         <div class="zoom">
-                                                            <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="${info[i].title}" >
-                                                             <h3>${info[i].title}</h3>
+                                                            <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="${info[i].original_title}" >
+                                                             <h3>${info[i].original_title}</h3>
                                                         </div>
                                                      </a>
                                                      </article>`

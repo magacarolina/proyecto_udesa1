@@ -208,7 +208,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     transform: scale(1.1); 
   }
 
-.top-peliculas, .top-kids, .top-series {
+.top-peliculas, .top-rated, .top-series {
     
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -263,7 +263,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 
 @media(min-width:420px){
-    .top-peliculas, .top-kids, .top-series{
+    .top-peliculas, .top-rated, .top-series{
         grid-template-columns: repeat(2,1fr);
         
     }
@@ -284,7 +284,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 
 @media(min-width:768px){
-    .top-peliculas, .top-kids, .top-series{
+    .top-peliculas, .top-rated, .top-series{
         grid-template-columns: repeat(3,1fr);
         padding-bottom: 10px;
         padding-right: 40px;
@@ -319,7 +319,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 }
 
 @media(min-width:1080px){
-    .top-peliculas, .top-kids, .top-series{
+    .top-peliculas, .top-rated, .top-series{
         grid-template-columns: repeat(4,1fr);
         padding-right: 50px;
     }
