@@ -1,3 +1,50 @@
+let url4 =`
+https://api.themoviedb.org/3/movie/{movie_id}/images?api_key=7b1d579cd6ba8b41cc1f3f375e375cb5&language=en-US`
+
+
+fetch(url4)
+   .then(function(respuestas){
+       return respuestas.json()
+   })
+   .then(function(data){
+       console.log(data);
+
+       let info= data.results
+       let movies= document.querySelector ('.uk-position-center uk-panel');
+       console.log (movies)
+
+       for (let i=0; i<8; i++){
+           movies.innerHTML+= `<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+
+           <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+               <li>
+                   <img src="img/logo-universidad-de-san-andres.png info[i]." alt=""> 
+                   <div class="uk-position-center uk-panel"></div>
+               </li>
+             
+           </ul>
+       
+           <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+       
+       </div>`
+       }
+
+       
+       
+
+        
+       
+   })
+   .catch(function(error){
+       console.log(error)  
+   })
+
+
+
+
+
+
 let media = "movie";
 let timeWindow = "week";
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
