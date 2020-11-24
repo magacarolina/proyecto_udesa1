@@ -3,16 +3,9 @@ const search=location.search
 const searchString=new URLSearchParams (search)
 let resultadoSearch=searchString.get("keywords")
 
-
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5" 
 
-
-
-
 let url = `https://api.themoviedb.org/3/search/multi?api_key=${apiKey}&language=es-ES&query=${resultadoSearch}&page=1&include_adult=false`
-
-
-
 
 
 fetch (url)
