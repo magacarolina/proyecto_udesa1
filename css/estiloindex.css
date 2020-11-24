@@ -179,9 +179,9 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 .pelicula a, .series a {
     color: rgb(60, 77, 77);
-    text-decoration: none;
     font-family:'Work Sans', sans-serif;
     text-align: start;
+    text-decoration: none;
 }
 
 .titulo {
@@ -189,7 +189,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     text-align: center;
     padding: 5%; 
     text-decoration:underline rgb(128, 194, 166);
-    color:#EDE2D2;
+    color:#EDE2D2;   
 }
 .container h3 {
     padding: 18px;
