@@ -69,7 +69,7 @@ fetch (url1)
 .then (function (data){
 
     let review = document.querySelector('.reviews');
-        for (let i=0; i<1; i++){
+        for (let i=0; i<data.reviews.length ; i++){
             review.innerText += `${data[i].content}`;
         }
         

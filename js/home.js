@@ -1,31 +1,6 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let media = "movie";
 let timeWindow = "week";
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
-
-
-
-
-
-
-
-
-
 
 
 let url = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key=${apiKey}`
@@ -90,7 +65,7 @@ tv.innerHTML +=
 console.log(error);
  })
 
-let url3 = `https://api.themoviedb.org/3/movie/top_rated?api_key=7b1d579cd6ba8b41cc1f3f375e375cb5&language=en-US&page=1
+let url3 = `https://api.themoviedb.org/3/movie/upcoming?api_key=7b1d579cd6ba8b41cc1f3f375e375cb5&language=en-US&page=1
 `;       
 fetch (url3)
 .then(function (respuesta){

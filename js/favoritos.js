@@ -15,7 +15,7 @@ storageJs.forEach(id => {
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=788099c4461681a452d9ee372d586bdd`)
     .then(datos=>datos.json())
     .then(respuestas=>{
-    
+
         movies = `<article class="pelicula">
         <a href="detallepelicula.html?id=${respuestas.id}">
             <div class="zoom">
