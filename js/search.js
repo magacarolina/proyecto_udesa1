@@ -37,7 +37,7 @@ info.forEach(peliculas => {
      </a>
      </article>`;
 
-     if(peliculas.media_type=="tv")
+     if(peliculas.media_type == "tv")
      movies.innerHTML += 
      `<article class="pelicula">
      <a href="detalleseries.html?id=${peliculas.id}">
