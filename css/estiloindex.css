@@ -75,7 +75,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     padding: 15px;
     color:  white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 1px;
   }
 
 
@@ -189,6 +189,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     text-align: center;
     padding: 5%; 
     text-decoration:underline rgb(128, 194, 166);
+    color:#EDE2D2;
 }
 .container h3 {
     padding: 18px;
