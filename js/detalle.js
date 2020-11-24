@@ -40,7 +40,7 @@ fetch (url)
         console.log(error);
     })
    
-let (url1) = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US&page=1`
+let url1 = `https://api.themoviedb.org/3/movie/${id}/reviews?api_key=${apiKey}&language=en-US&page=1`
 
 fetch (url1)
 .then(function (respuesta){
@@ -49,7 +49,7 @@ fetch (url1)
 .then (function (data){
 
     let review = document.querySelector('.reviews');
-        for (let i=0; i<1; i++){
+        for (let i=0; i<data.reviews.length ; i++){
             review.innerText += `${data[i].content}`;
         }
         
