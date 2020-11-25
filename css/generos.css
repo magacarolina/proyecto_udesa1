@@ -14,6 +14,8 @@ body {
     font-family:'Work Sans', sans-serif;
 }
 
+ /*====== Banner ======*/
+
 .bannermobile img {
     height: 100% ;
     width: 100%;
@@ -24,117 +26,135 @@ body {
 
 .banner { display: none;
 }
-  .opciones ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background: rgb(162,233,203);
-    background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 100%);
-    display: flex;
-    justify-content: center;
+  /*====== Opciones ======*/
+
+.opciones ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: rgb(162,233,203);
+  background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 100%);
+  display: flex;
+  justify-content: center;
 }
+.opciones li{
+  height: 50px;
+}   
 
 .opciones li a {
-    display: block;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 100%;
-    font-weight: 500;
-    padding: 8px 16px;
-  
+  display: block;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: 500;
+  padding: 8px 16px;
+
 }
 .opciones li a.active {
-        color: white;
-    }   
+      background-color: white;
+      color: white;
+  }   
 
 .opciones li a:hover:not(.active) {
-    background-color: rgb(128, 194, 166);
-    color: white;
-  }
+  background-color: rgb(128, 194, 166);
+  color: white;
+}
 
-.generos li a:hover:not(.active) {
-    color: white;
-  }
+/*====== Barras main Navbar ======*/
 
 .navbar {
-    display: none;
-    width: 100%;
-    background-color:black;
-    overflow: auto;
-    font-family:'Work Sans', sans-serif;
-  }
-  
-  .navbar .logo a{
-    float: left;
-    padding: 15px;
-    color:  white;
-    text-decoration: none;
-    font-size: 17px;
-  }
+  display: none;
+  width: 100%;
+  background-color:black;
+  overflow: auto;
+  font-family:'Work Sans', sans-serif;
+}
 
-  .navbar .options a {
-    float: right;
-    padding: 15px;
-    color:  white;
-    text-decoration: none;
-    font-size: 17px;
-    margin-right: 10px;
-  }
-  .navbar a:hover {
-    background-color: gray;
-    color: rgb(128, 194, 166);
-  }
-  
-  .active {
-    background-color: rgb(128, 194, 166);
-    color: #EDE2D2; 
-  }
-   
-.topnav {
-    overflow: hidden;
-    background: black;
-    width: 100%;
-    position: relative;
+.navbar .logo a{
+  float: left;
+  padding: 15px;
+  color:  white;
+  text-decoration: none;
+  font-size: 1px;
+}
 
-  }
-  
-.topnav #myLinks {
-    display: none;
-  }
-  
-.topnav a {
-    color: white;
-    padding: 14px 10px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-  
-.topnav a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 5px;
-    top: 5px;
-    
-  }
-  
-.topnav a:hover {
-    background-color: rgb(128, 194, 166);
-    color: black;
-  }
-  
+
+.navbar .options a {
+  float: right;
+  padding: 15px;
+  color:  white;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 10px;
+}
+.navbar a:hover {
+  background-color: gray;
+  color: rgb(128, 194, 166);
+}
+
+.navbar li  {
+  display: inline-block;
+}
+
+.navbar ul{
+  display: inline-block;
+  float: right;
+  margin: 0%;
+}
+
 .active {
-    background-color: gray;
-    color: #EDE2D2;
-  }
+  background-color: rgb(128, 194, 166);
+  color: #EDE2D2; 
+}
+ 
+.topnav {
+  overflow: hidden;
+  background: black;
+  width: 100%;
+  position: relative;
+  
+}
 
-  /*====== Search ======*/
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  
+}
+
+.topnav a:hover {
+  background-color: rgb(128, 194, 166);
+  color: black;
+}
+
+.active {
+  background-color: gray;
+  color: #EDE2D2;
+}
+
+
+
+/*====== Search ======*/
 
 .search-form {
   position: relative;
+  top: -22px;
   display: flex;
   align-items: center;
 }

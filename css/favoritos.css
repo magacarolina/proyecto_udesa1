@@ -34,10 +34,14 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(128, 194, 166);
+    background: rgb(162,233,203);
+background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 100%);
     display: flex;
     justify-content: center;
 }
+.opciones li{
+    height: 50px;
+}   
 
 .opciones li a {
     display: block;
@@ -47,7 +51,7 @@ body {
     font-size: 100%;
     font-weight: 500;
     padding: 8px 16px;
-    background-color: rgb(128, 194, 166);
+
 }
 .opciones li a.active {
         background-color: white;
@@ -74,8 +78,9 @@ body {
     padding: 15px;
     color:  white;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1px;
   }
+
 
 .navbar .options a {
     float: right;
@@ -88,6 +93,16 @@ body {
 .navbar a:hover {
     background-color: gray;
     color: rgb(128, 194, 166);
+  }
+
+.navbar li  {
+    display: inline-block;
+  }
+
+.navbar ul{
+    display: inline-block;
+    float: right;
+    margin: 0%;
   }
 
 .active {
@@ -134,10 +149,13 @@ body {
     color: #EDE2D2;
   }
 
+
+
 /*====== Search ======*/
 
 .search-form {
     position: relative;
+    top: -22px;
     display: flex;
     align-items: center;
   }
@@ -162,10 +180,47 @@ body {
     color: (black);
     cursor: pointer;
   }
-  
 /*====== Estructura ======*/
 
+.container{
+    margin: 5px;
+    
+}
 
+.container h3 {
+    padding: 18px;
+    text-align: center;
+    font-weight: normal ;
+    color: white;
+    text-decoration: none;
+}
+.container{
+    margin: 5px;
+    
+}
+
+.container img{
+    width: 100%;
+}
+
+.pelicula {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-size: 14px;
+    padding-top: 25px;
+   
+}
+.zoom {
+    transition: transform .2s;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+.zoom:hover {
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.1); 
+  }
 
 /*====== Footer ======*/
 

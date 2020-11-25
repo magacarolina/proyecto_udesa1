@@ -12,10 +12,10 @@
 </head>
 <body>
     
-    <header>
-      <section class="encabezado">
+  <header>
+    <section class="encabezado">
 
-        <nav class="navbar">
+      <nav class="navbar">
           <div class="logo">
               <a href="index.html">
                <img class="logoWot" src="img/logo.png" alt="logo" width="45px"> 
@@ -23,9 +23,17 @@
           </div>
       
           <div class="options">
-            <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
-            <a href="generos.html">Géneros</a>
-            <a href="">Sugerencias</a>
+              <ul>
+                  <li>
+                      <form action="./search.html" method="GET" class="search-form">
+                          <input type="text" name="keywords" placeholder="Buscar.." class="search-form_input search" autocomplete="off">
+                          <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+                      </form></li>
+                  <li>
+                      <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a></li>
+                  <li>  <a href="generos.html">Géneros</a></li>
+                  <li> <a href="">Sugerencias</a></li>
+              </ul>
           </div>
         </nav>
         
@@ -35,12 +43,14 @@
                <img class="logoWot" src="img/WOTSINFONDO1.png" alt="logo" width="45px"> 
               </a>
           </div>
-
+        
+              
           <div id="myLinks">
             <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
             <a href="generos.html">Géneros</a>
-            <a href="">Sugerencias</a>
+            
       </div>
+
 
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
@@ -57,17 +67,12 @@
       <div class="bannermobile">  <img src="img/bannermobile1.jpg" alt="banner" > 
       </div>
       
-      <section class="opciones">
-
+    
+      <section class="opciones">                
         <ul>
-            <li> <div class="col-7 col-md-6">
-          <form action="./search.html" method="GET" class="search-form">
-              <input type="text" name="keywords" placeholder="Buscar.." class="search-form_input" autocomplete="off">
-              <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
-          </form>
-      </div></li>
+            <li> 
+             </li>
         </ul>
-  
       </section>
         
      </header>

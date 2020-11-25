@@ -27,6 +27,7 @@ body {
 .banner { display: none;
 }
 
+
 /*====== Opciones ======*/
 
 .opciones ul {
@@ -39,6 +40,9 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     display: flex;
     justify-content: center;
 }
+.opciones li{
+    height: 50px;
+}   
 
 .opciones li a {
     display: block;
@@ -92,6 +96,16 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     color: rgb(128, 194, 166);
   }
 
+.navbar li  {
+    display: inline-block;
+  }
+
+.navbar ul{
+    display: inline-block;
+    float: right;
+    margin: 0%;
+  }
+
 .active {
     background-color: rgb(128, 194, 166);
     color: #EDE2D2; 
@@ -136,10 +150,13 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     color: #EDE2D2;
   }
 
+
+
 /*====== Search ======*/
 
 .search-form {
     position: relative;
+    top: -22px;
     display: flex;
     align-items: center;
   }
