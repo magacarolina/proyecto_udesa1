@@ -29,7 +29,7 @@ fetch(url4)
 
            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                <li>
-                   <img src="https://image.tmdb.org/t/p/w500${info[i].backdrops}" alt=""> 
+                   <img src="https://image.tmdb.org/t/p/w500${info[i].file_path}" alt=""> 
                    <div class="uk-position-center uk-panel"></div>
                </li>
              
