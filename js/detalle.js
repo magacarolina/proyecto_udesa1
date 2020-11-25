@@ -32,6 +32,7 @@ fetch (url)
         let estreno = document.querySelector('.estreno')
         let estado = document.querySelector ('.estado')   
         let puntuacion = document.querySelector('.puntuacion')
+        
 
         titulo.innerText = data.title;
         descripcion.innerText = data.overview ;
@@ -67,13 +68,16 @@ fetch (url1)
     return respuesta.json()
 })
 .then (function (data){
-
+     console.log(data);
     let review = document.querySelector('.reviews');
-        for (let i=0; i<data.reviews.length ; i++){
-            review.innerText += `${data[i].content}`;
-        }
-        
-    console.log(review);
+    for (let i=0; i<data.results.length; i++){
+        if (data.results.content == ""){
+        review.innerHTML += `<p>Review list not available</p>`
+    } else {
+        review.innerHTML += ` 
+        <p>${data.results[i].content}</p>`;
+    }}
+
     })
 
     .catch (function (error){
