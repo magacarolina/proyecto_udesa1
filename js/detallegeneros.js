@@ -1,4 +1,10 @@
 
+let queryString = location.search;
+let queryObject = new URLSearchParams(queryString);
+
+let genres = queryObject.get("genres");
+
+
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
 
 
@@ -11,9 +17,10 @@ fetch (url)
     })
     .then (function (data){
 
+
         let info = data.results 
         let movies = document.querySelector('.generos');
-
+       console.log (data);
 
         for (let i=0; i<12; i++){
             movies.innerHTML += 

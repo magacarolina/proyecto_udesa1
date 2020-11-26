@@ -10,7 +10,7 @@ let timeWindow = "week";
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
 
 
-let url4 = `https://api.themoviedb.org/3/collection/10/images?api_key=${apiKey}`
+let url4 = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key=${apiKey}`
 
 
 fetch(url4)
@@ -30,7 +30,7 @@ fetch(url4)
            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                <li>
-                   <img src="https://image.tmdb.org/t/p/w500${info[i].file_path}" alt=""> 
+                   <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt=""> 
                    <div class="uk-position-center uk-panel"></div>
                </li>
              
