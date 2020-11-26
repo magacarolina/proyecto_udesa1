@@ -12,7 +12,7 @@ fetch (url)
     .then (function (data){
 
         let info = data.results 
-        let movies = document.querySelector('.top-peliculas');
+        let movies = document.querySelector('.generos');
 
 
         for (let i=0; i<12; i++){
