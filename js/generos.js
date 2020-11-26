@@ -15,7 +15,7 @@ fetch (url)
           generos.innerHTML += 
 
             `<li>
-                <a href="detallegeneros.html">
+                <a href="detallegeneros.html?id=${genre[i].id}">
                      <h1 class="genero">${genre[i].name} </h1> 
                      <img src="img/generos_img/${genre[i].name}.jpg" alt="${genre[i].name}">
                     </a>
