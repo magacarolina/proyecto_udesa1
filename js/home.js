@@ -24,12 +24,13 @@ fetch(url4)
 
        console.log (data);
 
-       for (let i=0; i<length; i++){
-           img.innerHTML+= `<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slider>
+       for (let i=0; i<8; i++){
+           img.innerHTML += `<div uk-slider>
 
+           <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
            <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                <li>
-                   <img src="https://image.tmdb.org/t/p/w500${info[i].backdrops}" alt=""> 
+                   <img src="https://image.tmdb.org/t/p/w500${info[i].file_path}" alt=""> 
                    <div class="uk-position-center uk-panel"></div>
                </li>
              
