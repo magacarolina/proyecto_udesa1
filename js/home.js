@@ -18,21 +18,16 @@ let url1 = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key
  .then (function (data){
                          
  let info = data.results 
- let slide = document.querySelector('.uk-slider');
+ let slide = document.querySelector('.uk-slider-items');
                          
- for (let i=0; i<length; i++){
- slide.innerHTML += 
-                                                     ` <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-                                                    <li>
-                                                         <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
-                                                         <div class="uk-position-center uk-panel"></div>
-                                                     </li></ul>
-                                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-                                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>`
-                         
-                                                     }
-                         
-                                                 })
+ for (let i=0; i<10; i++){
+ slide.innerHTML +=  `<li>
+                         <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                                         
+                      </li>`
+         }                                         
+        
+  })
  
  .catch (function (error){
  console.log(error);

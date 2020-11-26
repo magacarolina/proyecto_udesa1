@@ -17,7 +17,6 @@ let storageJs = JSON.parse(storageMovie)
 if(storageJs.length>0)
 containerMovie.innerHTML=""
 
-/*let movies = ''*/
 
 storageJs.forEach(id => {
     fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=788099c4461681a452d9ee372d586bdd`)
