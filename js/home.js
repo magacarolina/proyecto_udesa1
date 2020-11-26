@@ -10,44 +10,34 @@ let timeWindow = "week";
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
 
 
-let url4 = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key=${apiKey}`
-
-
-fetch(url4)
-   .then(function(respuestas){
-       return respuestas.json()
-   })
-   .then(function(data){
-     
-       let info= data.results
-       let img= document.querySelector ('.slider');
-
-       console.log (data);
-
-       for (let i=0; i<8; i++){
-           img.innerHTML += `<div uk-slider>
-
-           <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-           <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
-               <li>
-                   <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt=""> 
-                   <div class="uk-position-center uk-panel"></div>
-               </li>
-             
-           </ul>
-       
-           <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
-           <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
-       
-       </div>`
-       }    
-       
-   })
-   .catch(function(error){
-       console.log(error)  
-   })
-
-
+let url1 = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key=${apiKey}`
+ fetch (url1)
+ .then(function (respuesta){
+  return respuesta.json()
+  })
+ .then (function (data){
+                         
+ let info = data.results 
+ let slide = document.querySelector('.uk-slider');
+                         
+ for (let i=0; i<length; i++){
+ slide.innerHTML += 
+                                                     ` <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
+                                                    <li>
+                                                         <img src="https://image.tmdb.org/t/p/w500${info[i].poster_path}" alt="">
+                                                         <div class="uk-position-center uk-panel"></div>
+                                                     </li></ul>
+                                                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>`
+                         
+                                                     }
+                         
+                                                 })
+ 
+ .catch (function (error){
+ console.log(error);
+  })
+ 
 
 
 let url = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key=${apiKey}`
