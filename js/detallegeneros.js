@@ -39,6 +39,35 @@ fetch (url)
         console.log(error);
     })
 
+    let url1 = `https://api.themoviedb.org/3/discover/tv?api_key=${apiKey}&language=en-US&with_genres=${id}`
+
+fetch (url1)
+    .then(function (response){
+        return response.json()
+    })
+    .then (function (data){
+        
+       let infoGeneros = data.results 
+       console.log(infoGeneros)
+        let generos = document.querySelector('.generos2');
+        
+             for (let i=0; i<8; i++){
+                         let pelicula = `<h2></h2>
+                         <article class="series">
+                         <a href="detalleseries.html?id=${infoGeneros[i].id}">
+                             <div class="zoom">
+                                 <img src="https://image.tmdb.org/t/p/w500${infoGeneros[i].poster_path}" alt="${infoGeneros[i].title}" >
+                                  <h3>${infoGeneros[i].title}</h3>
+                             </div>
+                          </a>
+                          </article>`;
+                          generos.innerHTML += pelicula 
+             }
+          
+    })  
+    .catch (function (error){
+        console.log(error);
+    })
 
     
   

@@ -4,7 +4,7 @@ const storageMovie = sessionStorage.getItem('favoritosMovie');
 const storageSerie = sessionStorage.getItem('favoritoSerie');
 
 if(storageMovie === null){
-    sessionStorage.setItem('favoritosMovie',"[]")
+    sessionStorage.setItem('favoritosMovie',"git")
 }
 if(storageSerie === null){
     sessionStorage.setItem('favoritoSerie',"[]")
