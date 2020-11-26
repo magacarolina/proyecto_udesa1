@@ -186,13 +186,13 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     margin: 5px;
     
 }
-.pelicula, .series {
+.generos {
     min-height: 360px;
     width: 100%;
 
 }
 
-.pelicula a, .series a {
+.generos a, .series a {
     color: rgb(60, 77, 77);
     font-family:'Work Sans', sans-serif;
     text-align: start;
@@ -224,7 +224,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     transform: scale(1.1); 
   }
 
-.top-peliculas, .top-rated, .top-series {
+.generos{
     
     display: grid;
     grid-template-columns: repeat(1,1fr);

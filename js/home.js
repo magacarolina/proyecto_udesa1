@@ -20,7 +20,7 @@ let url1 = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key
  let info = data.results 
  let slide = document.querySelector('.uk-slider');
                          
- for (let i=0; i<length; i++){
+ for (let i=0; i<10; i++){
  slide.innerHTML += 
                                                      ` <ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m">
                                                     <li>
