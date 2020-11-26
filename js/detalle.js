@@ -47,11 +47,13 @@ fetch (url)
         
             let storage = sessionStorage.getItem('favoritos')
             let storageJS = JSON.parse(storage)
-            if(!storageJS.includes(id)){
-                storageJS.push(id);
+            let pelicula ={tipo:"movie", id:id}
+                
+            if(!storageJS.includes(pelicula)){
+                storageJS.push(pelicula);
             }else{
                 storageJS = storageJS.filter(function(movie){
-                    return movie != id
+                    return movie != pelicula
                 })
             }
             sessionStorage.setItem('favoritos', JSON.stringify(storageJS) )})

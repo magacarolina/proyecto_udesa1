@@ -25,14 +25,14 @@
           <div class="options">
               <ul>
                   <li>
-                      <form action="./search.html" method="GET" class="search-form">
+                      <form style="top: -17px;" action="./search.html" method="GET" class="search-form">
                           <input type="text" name="keywords" placeholder="Buscar.." class="search-form_input search" autocomplete="off">
                           <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
                       </form></li>
                   <li>
                       <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a></li>
                   <li>  <a href="generos.html">Géneros</a></li>
-                  <li> <a href="">Sugerencias</a></li>
+                 
               </ul>
           </div>
         </nav>
@@ -46,8 +46,12 @@
         
               
           <div id="myLinks">
-            <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
-            <a href="generos.html">Géneros</a>
+            <form style="top: 0px;"action="./search.html" method="GET" class="search-form">
+                <input type="text" name="keywords" placeholder="Buscar.." class="search-form_input search" autocomplete="off">
+                <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+            </form>
+          <a href="favoritos.html"><i class="fas fa-heart"></i> Añadidos</a>
+          <a href="generos.html">Géneros</a>
             
       </div>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">

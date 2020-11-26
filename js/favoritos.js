@@ -23,8 +23,12 @@ storageJs.forEach(id => {
                  <h3>${respuestas.title}</h3>
             </div>
          </a>
+         <button class="botonCorazon" onclick="sacarDeFavoritos(${respuestas.id})">♥</button>
          </article>`;
     
         container.innerHTML += movies;
     })
     .catch(error=>console.log(error)); })
+
+
+    function sacarDeFavoritos(sacar){ }

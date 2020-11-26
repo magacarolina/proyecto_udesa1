@@ -13,35 +13,35 @@ fetch (url)
         return respuesta.json()
     })
     .then (function (data){
-
         let info = data.results 
-        let movies = document.querySelector('.resultados');
-console.log(info)
+        let movies = document.querySelector('.resultados')
+        let gif = document.querySelector(".loadingGif")
+        gif.style.display="none";
 
-info.forEach(peliculas => {
-    if(peliculas.media_type=="movie")
-    movies.innerHTML += 
-    `<article class="pelicula">
-    <a href="detallepelicula.html?id=${peliculas.id}">
-        <div class="zoom">
-            <img src="https://image.tmdb.org/t/p/w500${peliculas.poster_path}" alt="${peliculas.title}" >
-             <h3>${peliculas.title}</h3>
-        </div>
-     </a>
-     </article>`;
+        info.forEach(peliculas => {
+            if(peliculas.media_type=="movie")
+            movies.innerHTML += 
+            `<article class="pelicula">
+            <a href="detallepelicula.html?id=${peliculas.id}">
+                <div class="zoom">
+                    <img src="https://image.tmdb.org/t/p/w500${peliculas.poster_path}" alt="${peliculas.title}" >
+                    <h3>${peliculas.title}</h3>
+                </div>
+            </a>
+            </article>`;
 
-     if(peliculas.media_type == "tv")
-     movies.innerHTML += 
-     `<article class="pelicula">
-     <a href="detalleseries.html?id=${peliculas.id}">
-         <div class="zoom">
-             <img src="https://image.tmdb.org/t/p/w500${peliculas.poster_path}" alt="${peliculas.title}" >
-              <h3>${peliculas.title}</h3>
-         </div>
-      </a>
-      </article>`
-});
-})
+            if(peliculas.media_type == "tv")
+            movies.innerHTML += 
+            `<article class="pelicula">
+            <a href="detalleseries.html?id=${peliculas.id}">
+                <div class="zoom">
+                    <img src="https://image.tmdb.org/t/p/w500${peliculas.poster_path}" alt="${peliculas.title}" >
+                    <h3>${peliculas.title}</h3>
+                </div>
+            </a>
+            </article>`
+         });
+})  
         
     .catch (function (error){
         console.log(error);

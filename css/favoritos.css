@@ -214,6 +214,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     transition: transform .2s;
     width: 300px;
     margin: 0 auto;
+    position: relative;
   }
   
 .zoom:hover {

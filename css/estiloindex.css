@@ -300,6 +300,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 }
 
 
+
 @media(min-width:768px){
     .top-peliculas, .top-rated, .top-series{
         grid-template-columns: repeat(3,1fr);
@@ -333,6 +334,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+
 }
 
 @media(min-width:1080px){
