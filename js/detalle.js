@@ -9,9 +9,9 @@ let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
 let url = `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}`;
 
 
-const storage = sessionStorage.getItem('favoritos');
+const storage = sessionStorage.getItem('favoritosMovie');
 if(storage === null){
-    sessionStorage.setItem('favoritos','[]')
+    sessionStorage.setItem('favoritosMovie','[]')
 }
 
 fetch (url)
@@ -44,20 +44,19 @@ fetch (url)
         
         let button = document.querySelector('.favBoton')
         button.addEventListener('click', function(){
-            console.log("h");
         
-            let storage = sessionStorage.getItem('favoritos')
+        
+            let storage = sessionStorage.getItem('favoritosMovie');
             let storageJS = JSON.parse(storage)
-            let pelicula ={tipo:"movie", id:id}
                 
-            if(!storageJS.includes(pelicula)){
-                storageJS.push(pelicula);
+            if(!storageJS.includes(id)){
+                storageJS.push(id);
             }else{
                 storageJS = storageJS.filter(function(movie){
-                    return movie != pelicula
+                    return movie != id
                 })
             }
-            sessionStorage.setItem('favoritos', JSON.stringify(storageJS) )})
+            sessionStorage.setItem('favoritosMovie', JSON.stringify(storageJS) )})
     })
     .catch (function (error){
         console.log(error);

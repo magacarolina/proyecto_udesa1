@@ -223,6 +223,70 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     transform: scale(1.1); 
   }
 
+  .botonCorazonMovie{
+    text-decoration: none;
+    color: rgb(97, 189, 143);
+    text-align: center;
+    font-size: 1.5em;
+    border-color: rgb(97, 189, 143);
+    border-width: 5px;
+    border-style: solid;
+    background-color: rgb(187, 206, 199);
+   }
+ 
+   .botonCorazonSerie{
+     text-decoration: none;
+     color: rgb(97, 189, 143);
+     text-align: center;
+     font-size: 1.5em;
+     border-color: rgb(97, 189, 143);
+     border-width: 5px;
+     border-style: solid;
+     background-color: rgb(187, 206, 199);
+   }
+
+   .h3titulo{
+    font-weight: bold !important;
+    text-align: center !important;
+    padding: 5% !important;
+    text-decoration: underline rgb(128, 194, 166) !important;
+    color: #EDE2D2 !important;
+    font-size: 35px !important;
+  }
+  
+  .favoritosSeries, .favoritosPeliculas  {
+    text-align: center;
+    color: #ede2d283;
+    font-size: 13px;
+   }
+
+   .top-peliculas {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    font-size: 14px;
+    padding-top: 25px;
+   
+}
+
+.container{
+    margin: 5px;
+    
+}
+.pelicula, .series {
+    min-height: 360px;
+    width: 100%;
+    display: inline-block;
+}
+
+.pelicula a, .series a {
+    color: rgb(60, 77, 77);
+    font-family:'Work Sans', sans-serif;
+    text-align: start;
+    text-decoration: none;
+}
+
+
+
 /*====== Footer ======*/
 
 .footer{

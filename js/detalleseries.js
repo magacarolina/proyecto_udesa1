@@ -9,6 +9,11 @@ let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=${apiKey}`;
 
 
+const storage = sessionStorage.getItem('favoritoSerie');
+if(storage === null){
+    sessionStorage.setItem('favoritoSerie','[]')
+}
+
 fetch (url)
     .then(function (respuesta){
         return respuesta.json()
@@ -37,9 +42,8 @@ fetch (url)
 
         let button = document.querySelector('.favBoton')
         button.addEventListener('click', function(){
-            console.log("h");
-        
-            let storage = sessionStorage.getItem('favoritos')
+
+            let storage = sessionStorage.getItem('favoritoSerie');
             let storageJS = JSON.parse(storage)
             if(!storageJS.includes(id)){
                 storageJS.push(id);
@@ -48,7 +52,7 @@ fetch (url)
                     return movie != id
                 })
             }
-            sessionStorage.setItem('favoritos', JSON.stringify(storageJS) )})
+            sessionStorage.setItem('favoritoSerie', JSON.stringify(storageJS) )})
     })
     .catch (function (error){
         console.log(error);
