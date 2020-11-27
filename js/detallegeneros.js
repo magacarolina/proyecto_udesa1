@@ -52,16 +52,16 @@ fetch (url1)
         let generos = document.querySelector('.generos2');
         
              for (let i=0; i<8; i++){
-                         let pelicula = `<h2></h2>
+                         let serie = `<h2></h2>
                          <article class="series">
                          <a href="detalleseries.html?id=${infoGeneros[i].id}">
                              <div class="zoom">
-                                 <img src="https://image.tmdb.org/t/p/w500${infoGeneros[i].poster_path}" alt="${infoGeneros[i].title}" >
-                                  <h3>${infoGeneros[i].title}</h3>
+                                 <img src="https://image.tmdb.org/t/p/w500${infoGeneros[i].poster_path}" alt="${infoGeneros[i].name}" >
+                                  <h3>${infoGeneros[i].name}</h3>
                              </div>
                           </a>
                           </article>`;
-                          generos.innerHTML += pelicula 
+                          generos.innerHTML += serie 
              }
           
     })  

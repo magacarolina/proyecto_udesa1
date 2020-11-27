@@ -25,9 +25,9 @@ fetch (url)
         let descripcion = document.querySelector('.description');
 
         let genero = document.querySelector('.genero');
-        for (let i=0; i<data.genres.length; i++){ 
-            genero.innerText += ` ${data.genres[i].name}`;
-        }
+        for (i=0; i<data.genres.length; i++){
+            genero.innerHTML += `<a href="/detallegeneros.html?id=${data.genres[i].id}"> ${data.genres[i].name}</a> `;
+    }
         
         let estreno = document.querySelector('.estreno')
         let estado = document.querySelector ('.estado')   

@@ -186,13 +186,13 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     margin: 5px;
     
 }
-.generos {
+.pelicula, .series {
     min-height: 360px;
     width: 100%;
 
 }
 
-.generos a, .series a {
+.pelicula a, .series a {
     color: rgb(60, 77, 77);
     font-family:'Work Sans', sans-serif;
     text-align: start;
@@ -224,7 +224,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     transform: scale(1.1); 
   }
 
-.generos{
+.container{
     
     display: grid;
     grid-template-columns: repeat(1,1fr);
@@ -237,7 +237,6 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 .container img{
     width: 100%;
 }
-
 
 /*====== Footer ======*/
 
@@ -280,7 +279,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 
 @media(min-width:420px){
-    .generos, .top-rated, .top-series{
+    .container{
         grid-template-columns: repeat(2,1fr);
         
     }
@@ -302,7 +301,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 
 @media(min-width:768px){
-    .generos, .top-rated, .top-series{
+    .container {
         grid-template-columns: repeat(3,1fr);
         padding-bottom: 10px;
         padding-right: 40px;
@@ -338,7 +337,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 }
 
 @media(min-width:1080px){
-    .generos, .top-rated, .top-series{
+    .container{
         grid-template-columns: repeat(4,1fr);
         padding-right: 50px;
     }
@@ -376,7 +375,3 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
-
-
-
