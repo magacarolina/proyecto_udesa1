@@ -226,7 +226,7 @@ text-align: center;
 
 }
 
-.pelicula a, .series a {
+.generos a, .series a {
     color: rgb(60, 77, 77);
     font-family:'Work Sans', sans-serif;
     text-align: start;
@@ -271,6 +271,7 @@ text-align: center;
 .container img{
     width: 100%;
 }
+
 
 /*====== Footer ======*/
 
