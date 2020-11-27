@@ -404,6 +404,7 @@ text-align: center;
     .navbar {
         display: block;
     }
+
     .footer ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);

@@ -21,7 +21,7 @@ fetch (url)
        console.log(infoGeneros)
         let generos = document.querySelector('.generos');
         
-             for (let i=0; i<8; i++){
+             for (let i=0; i<5; i++){
                          let pelicula = `<h2></h2>
                          <article class="peliculas">
                          <a href="detallepelicula.html?id=${infoGeneros[i].id}">
@@ -51,7 +51,7 @@ fetch (url1)
        console.log(infoGeneros)
         let generos = document.querySelector('.generos2');
         
-             for (let i=0; i<8; i++){
+             for (let i=0; i<5; i++){
                          let serie = `<h2></h2>
                          <article class="series">
                          <a href="detalleseries.html?id=${infoGeneros[i].id}">

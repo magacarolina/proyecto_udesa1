@@ -10,7 +10,7 @@ let timeWindow = "week";
 let apiKey = "7b1d579cd6ba8b41cc1f3f375e375cb5"
 
 
-let url1 = `https://api.themoviedb.org/3/trending/${media}/${timeWindow}?api_key=${apiKey}`
+let url1 = `https://api.themoviedb.org/3/trending/persons/${timeWindow}?api_key=${apiKey}`
  fetch (url1)
  .then(function (respuesta){
   return respuesta.json()
