@@ -153,7 +153,7 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
 
 /*====== Search ======*/
 
-.search-form {
+/* .search-form {
     position: relative;
     top: -22px;
     display: flex;
@@ -179,7 +179,74 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     border-left: solid 1px var(--light-gray);
     color: (black);
     cursor: pointer;
-  }
+  } */
+  form {
+    justify-content: center;
+}
+  
+.form-group input[type=text] {
+    
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid rgb(128, 194, 166);
+    width: 80%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+}
+        
+.form-group button {
+
+    padding: 10px;
+    background: #EDE2D2;
+    color: black;
+    font-size: 17px;
+    border: 1px solid rgb(128, 194, 166);
+    border-left: none; 
+    cursor: pointer;
+}
+        
+.form-group button:hover {
+    background: #EDE2D2;
+}
+        
+
+.form-group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mr-2 {
+    color: white;
+}
+
+.card-title {
+    color: white;
+}
+
+.btn.btn.btn-primary {
+color: #EDE2D2;
+}
+
+.busqueda {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.divbusqueda {
+display: grid;
+
+}
+.mr-2 {
+padding: 10px;
+text-align: justify;
+}
+
+ .botones{
+text-align: center;
+ }
+
+ 
   
   /*====== Estructura ======*/
 
@@ -297,6 +364,10 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    form {
+        padding: 10px 0px 20px 85px;
+    }
+
 }
 
 
@@ -333,6 +404,10 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     .footer ul{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    form {
+        padding: 10px 0px 20px 85px;
     }
 
 }
@@ -375,6 +450,11 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+
+    form {
+        padding: 10px 0px 20px 85px;
+    }
+
 }
 
 

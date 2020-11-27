@@ -72,7 +72,7 @@ fetch (url1)
      console.log(data);
     let review = document.querySelector('.reviews');
     for (let i=0; i<data.results.length; i++){
-        if (data.results.content == ""){
+        if (data.results.content == null ){
         review.innerHTML += `<p>Review list not available</p>`
     } else {
         review.innerHTML += ` 

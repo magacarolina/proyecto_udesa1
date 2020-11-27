@@ -149,11 +149,15 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     color: #EDE2D2;
   }
 
+.opciones h1 {
+    text-align: center;
+}
+
 
 
 /*====== Search ======*/
 
-.search-form {
+/* .search-form {
     position: relative;
     top: -22px;
     display: flex;
@@ -179,7 +183,79 @@ background: radial-gradient(circle, rgba(162,233,203,1) 11%, rgba(41,124,108,1) 
     border-left: solid 1px var(--light-gray);
     color: (black);
     cursor: pointer;
-  }
+  } */
+
+  /* Empieza buscador  */
+
+.form-group {
+    grid-template-columns: repeat(3,1fr);
+}
+        
+.form-group input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+    margin-bottom: 20px;
+}
+        
+.form-group button {
+
+    padding: 10px;
+    background: #EDE2D2;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; 
+    cursor: pointer;
+}
+        
+.form-group button:hover {
+    background: #EDE2D2;
+}
+        
+
+.form-group::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.mr-2 {
+    color: white;
+}
+
+.card-title {
+    color: white;
+}
+
+.btn.btn.btn-primary {
+color: rgb(128, 194, 166);
+}
+
+.busqueda {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.divbusqueda {
+display: grid;
+
+}
+.mr-2 {
+padding: 10px;
+text-align: justify;
+}
+
+ .botones{
+text-align: center;
+ }
+
+ 
+
+
+/* Termina buscador */
 
 /*====== Estructura ======*/
 
