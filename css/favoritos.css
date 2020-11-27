@@ -330,7 +330,7 @@ text-align: center;
     width: 100%;
     padding: 30px 0;
    
- 
+
 }
 
 .footer ul {
@@ -348,9 +348,18 @@ text-align: center;
 
 
 .footer p{
-    text-align: center ;
+ text-align: center;
+}
+
+#logofb {
+   max-width: 40px;
 
 }
+#logoinsta {
+    max-width: 47px;
+ 
+ }
+
 /*====== Responsive ======*/
 
 @media(min-width:420px){

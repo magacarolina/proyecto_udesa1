@@ -4,7 +4,7 @@ const storageMovie = sessionStorage.getItem('favoritosMovie');
 const storageSerie = sessionStorage.getItem('favoritoSerie');
 
 if(storageMovie === null){
-    sessionStorage.setItem('favoritosMovie',"git")
+    sessionStorage.setItem('favoritosMovie',"[]")
 }
 if(storageSerie === null){
     sessionStorage.setItem('favoritoSerie',"[]")
@@ -58,7 +58,6 @@ storageJs.forEach(id => {
     if(storageJs.length>0)
     containerSerie.innerHTML=""
     
-    /*let movies = ''*/
     
     storageJs.forEach(id => {
         fetch(`https://api.themoviedb.org/3/tv/${id}?api_key=788099c4461681a452d9ee372d586bdd`)
